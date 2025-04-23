@@ -1,9 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [],
-    unoptimized: true,
-  },
-}
+const repo = 'convaneo.github.io';          // <-- your repo name
 
-export default nextConfig; 
+export default {
+  output: 'export',                         // tells Next "static export"
+  basePath: '/' + repo,                     // ➊
+  assetPrefix: '/' + repo + '/',            // ➋
+  images: { unoptimized: true },            // skip Next/Image optimisation
+};
