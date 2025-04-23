@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+dist/
+.DS_Store
+node_modules/
+.next/ # any other build folders
+out/
